@@ -1,0 +1,28 @@
+{
+    "name": "mnocon/test",
+    "type": "composer-plugin",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "Marek Nocoń",
+            "email": "marek.nocon@ibexa.co"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MarekNocon\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3",
+        "ext-json": "*",
+        "composer-plugin-api": "^2.0"
+    },
+    "require-dev": {
+        "composer/composer": "^2.0"
+    },
+    "extra": {
+        "class": "MarekNocon\\Composer\\Plugin"
+    }
+}
